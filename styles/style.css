@@ -17,15 +17,15 @@
 /*ROOT FORMATTING*/
 :root {
   --site-font: "Outfit", sans-serif;
-  --main-text-color: #000;
-  --product-text-color: #394150;
-  --add-cart-btn: #652cd1;
-  --product-selection-bg: #d2d5da;
-  --production-selection-text: #f3f4f6;
-  --main-site-bg: #ffffff;
 }
 
-/*BODY FORMATTING*/
-body {
-  font-family: var(--site-font);
+/* ==========================================================================
+   PRODUCT PAGE FORMATTING
+   ========================================================================== */
+
+/*Format product img*/
+.product {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }

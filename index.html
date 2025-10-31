@@ -14,22 +14,20 @@
 <body>
     <main>
         <!-- Product Container -->
-        <article>
+        <article class="product-container">
             <!-- Product Image -->
             <div class="product-img">
-                <picture>
-
-                </picture>
+                <img src="images/shoe_image.jpg" alt="Nike Air Zoom Pegasus 38" class="product">
             </div>
             <div class="product-info">
                 <!-- Product Tab Navigation Container -->
-                <p><span>Home</span> - <span>Products</span> - <span>Sneakers</span></p>
+                <p class="product-tab-navigation"><span class="link">Home</span> - <span class="link">Products</span> - <span class="active-link">Sneakers</span></p>
 
                 <!-- Product Name -->
-                <h1>Nike Air Zoom Pegasus 38 for Running Men</h1>
+                <h1 class="product-title">Nike Air Zoom Pegasus 38 for Running Men</h1>
 
                 <!-- Product Description -->
-                <p>
+                <p class="product-body-txt">
                     The Nike Air Zoom Pegasus 38 is a high-performance
                     running shoe designed for speed and agility.
                     With its lightweight and responsive midsole, this shoe
@@ -52,11 +50,11 @@
                 <!-- Product Pricing Chart -->
                 <div class="product-selection">
                     <div class="product-color-type">
-                        <p>color</p>
+                        <p class="selection-title">color</p>
                         <p>Black</p>
                     </div>
                     <div class="product-size">
-                        <p>size</p>
+                        <p class="selection-title">size</p>
                         <p>42</p>
                     </div>
                     <div class="product-price">
@@ -66,8 +64,10 @@
 
                 <!-- Product Button Container -->
                 <div class="product-btn-container">
-                    <button>Add to cart</button>
-                    <button>Add to Wishlist</button>
+                    <button class="add-cart">Add to cart</button>
+                    <button class="wishlist-btn">
+                        Add to Wishlist
+                    </button>
                 </div>
             </div>
         </article>

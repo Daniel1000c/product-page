@@ -17,15 +17,124 @@
 /*ROOT FORMATTING*/
 :root {
   --site-font: "Outfit", sans-serif;
+  --margin-bottom: 40px;
+  --border-radius: 0.5rem;
+}
+
+/*BODY FORMATTING*/
+body {
+  font-family: var(--site-font);
+}
+
+/*Format site container*/
+.site-container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
 }
 
 /* ==========================================================================
    PRODUCT PAGE FORMATTING
    ========================================================================== */
+/*Format product container*/
+.product-container {
+  padding: 36px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 52px;
+}
 
-/*Format product img*/
-.product {
+.product-img img {
   width: 100%;
   height: 100%;
   object-fit: contain;
+  border-radius: var(--border-radius);
+}
+
+/*Format element spacing*/
+.product-tab-navigation,
+.product-desc,
+.product-highlights,
+.product-option-container {
+  margin-bottom: var(--margin-bottom);
+}
+
+.product-tab-navigation {
+  font-weight: 600;
+  font-size: 0.875rem;
+}
+
+.product-title {
+  font-weight: 600;
+  font-size: 2rem;
+  margin-bottom: 24px;
+}
+
+/*Format product description*/
+.product-desc,
+.list-item {
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.subsect-title {
+  margin-bottom: 12px;
+}
+
+/*Format product highlight list*/
+.product-highlights {
+  list-style-position: inside;
+  margin-left: 10px;
+}
+
+.list-item {
+  margin-bottom: 15px;
+}
+
+/*Format product option container*/
+.product-option-container {
+  background-color: red;
+  display: inline-flex;
+  width: 400px;
+  justify-content: space-around;
+  align-items: center;
+  padding: 24px;
+  border-radius: var(--border-radius);
+}
+
+.option-title {
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+
+/*Format button container*/
+.btn-container {
+  display: grid;
+  grid-template-columns: repeat(2, 200px);
+  gap: 20px;
+}
+
+/*Format button*/
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--site-font);
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 8px 32px;
+  border-radius: 5px;
+  border: none;
+}
+
+/*Format add card button*/
+.add-cart {
+  background-color: #652cd1;
+  color: #fff;
+}
+
+/*Format wishlist button icon*/
+.wishlist-btn > svg {
+  vertical-align: middle;
+  margin-right: 6px;
 }

@@ -64,6 +64,11 @@ body {
   font-size: 0.875rem;
 }
 
+/*Format product nav active link*/
+.active-tab-link {
+  color: #d2d5da;
+}
+
 .product-title {
   font-weight: 600;
   font-size: 2rem;
@@ -78,6 +83,7 @@ body {
 }
 
 .subsect-title {
+  font-size: 1rem;
   margin-bottom: 12px;
 }
 
@@ -93,7 +99,7 @@ body {
 
 /*Format product option container*/
 .product-option-container {
-  background-color: red;
+  background-color: #f3f4f6;
   display: inline-flex;
   width: 400px;
   justify-content: space-around;
@@ -103,14 +109,28 @@ body {
 }
 
 .option-title {
+  font-weight: 300;
+  font-size: 0.875rem;
   text-transform: uppercase;
   margin-bottom: 6px;
+}
+
+/*Format select option*/
+.select-option {
+  text-transform: capitalize;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+/*Format product price*/
+.product-price {
+  font-size: 2.3rem;
 }
 
 /*Format button container*/
 .btn-container {
   display: grid;
-  grid-template-columns: repeat(2, 200px);
+  grid-template-columns: repeat(2, 210px);
   gap: 20px;
 }
 
@@ -133,8 +153,42 @@ button {
   color: #fff;
 }
 
+/*Format wishlist button*/
+.wishlist-btn {
+  background: transparent;
+  border: 1px solid #d2d5da;
+}
 /*Format wishlist button icon*/
 .wishlist-btn > svg {
   vertical-align: middle;
   margin-right: 6px;
+}
+
+/* ==========================================================================
+  MEDIA QUERIES
+   ========================================================================== */
+/*Tablet Media Query*/
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  /*Format product container*/
+  .product-container {
+    grid-template-columns: 4fr 1fr;
+  }
+
+  .product-img {
+    background-color: red;
+  }
+
+  .product-img img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+}
+
+/*Mobile media query*/
+@media screen and (max-width: 640px) {
+  /*Format product container orientation*/
+  .product-container {
+    grid-template-columns: 1fr;
+  }
 }
